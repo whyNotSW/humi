@@ -6,15 +6,15 @@
 <script type="text/javascript" src="https://api.ipify.org?whynot"></script>
 <script type="text/javascript">
 	$(function() {
-		$.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-			function(json) {
-				conip = json.ip;
+		$.get("https://api.ipify.org?format=jsonp&callback=?",
+			function(e) {
+				$("#iptest").html(e);
+			alert(e);
 			}
 		);
-		$("#iptest").html(conip);
+		
 	});
-	alert(conip);
-	var conip = whynot();
+
 </script>
 </head>
 <body>
