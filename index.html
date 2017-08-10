@@ -8,22 +8,16 @@
 	$(function() {
 		$.getJSON("https://api.ipify.org?format=jsonp&callback=?",
 			function(json) {
-				alert(json.ip);
-				console.log(json.ip);
-				$("#iptest").html(json.ip);
-		conip = json.ip;
-			 alert("0:"+conip);
-			});
-		 alert("2:"+conip);
-		
+			conip = json.ip;
+		});
+		$("#iptest").html(conip);
 	});
-	 alert("3:"+conip);
 	var conip;
 </script>
 </head>
 <body>
 
-<h1>WELCOME 재현이대가리들어4</h1>
+<h1>WELCOME 재현이대가리 VS 종원대가리 </h1>
 <div>
  <span>접속한 IP:<span>
  <span id="iptest"></span>
