@@ -8,19 +8,17 @@
 	$(function() {
 		$.getJSON("https://api.ipify.org?format=jsonp&callback=?",
 			function(json) {
-				$("#iptest").html(json.ip);
-			alert(json);
-			alert(json.ip);
+				conip = json.ip;
 			}
 		);
-		
+		$("#iptest").html(json.ip);
 	});
-
+	var conip;
 </script>
 </head>
 <body>
 
-<h1>WELCOME INDEX EDIT3</h1>
+<h1>WELCOME INDEX EDIT FIN</h1>
 <div>
  <span>접속한 IP:<span>
  <span id="iptest"></span>
