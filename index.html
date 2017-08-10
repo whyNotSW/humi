@@ -6,16 +6,20 @@
 <script type="text/javascript" src="https://api.ipify.org?whynot"></script>
 <script type="text/javascript">
 	$(function() {
-	
-	$("#iptest").html(conip);
-		alert(conip);
+		$.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+			function(json) {
+				conip = json.ip;
+			}
+		);
+		$("#iptest").html(conip);
 	});
+	alert(conip);
 	var conip = whynot();
 </script>
 </head>
 <body>
 
-<h1>WELCOME INDEX EDIT12</h1>
+<h1>WELCOME INDEX EDIT00</h1>
 <div>
  <span>접속한 IP:<span>
  <span id="iptest"></span>
