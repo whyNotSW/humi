@@ -3,17 +3,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>whyNot HOME</title>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="https://api.ipify.org?whynot"></script>
 <script type="text/javascript">
 	$(function() {
-		$.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-			function(json) {
-				conip = json.ip;
-			}
-		);
+	
 	$("#iptest").html(conip);
 		alert(conip);
 	});
-	var conip;
+	var conip = whynot;
 </script>
 </head>
 <body>
