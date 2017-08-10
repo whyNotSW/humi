@@ -21,7 +21,7 @@ $("#iptest").html(ipaddress + "접속자 ip");
 </head>
 <body>
 
-<h1>WELCOME INDEX</h1>
+<h1>WELCOME INDEX EDIT JSP</h1>
 <h2 id="iptest"></h2>
   
 </body>
