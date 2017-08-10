@@ -3,21 +3,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>whyNot HOME</title>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 <script type="text/javascript">
-$(function(){
- $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-			function(json) {
-				conip = json.ip);
-			}
-		);
- $("#iptest").html(conip);
+	$(function(){
+		 $("#iptest").html(conip);
 	});
- var conip;
- </script>
+		
+	var conip;
+	function getIP(json) {
+		conip = json.ip
+	}
+</script>
 </head>
 <body>
 
-<h1>WELCOME INDEX EDIT</h1>
+<h1>WELCOME INDEX EDIT2</h1>
 <div>
  <span>접속한 IP:<span>
  <span id="iptest"></span>
