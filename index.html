@@ -6,10 +6,11 @@
 <script type="text/javascript" src="https://api.ipify.org?whynot"></script>
 <script type="text/javascript">
 	$(function() {
-		$.get("https://api.ipify.org",
-			function(e) {
-				$("#iptest").html(e);
-			alert(e);
+		$.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+			function(json) {
+				$("#iptest").html(json.ip);
+			alert(json);
+			alert(json.ip);
 			}
 		);
 		
